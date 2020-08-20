@@ -1,0 +1,40 @@
+<%- include("partials/header") %>
+
+<div class = "container">
+	
+	<h1 style = "text-align: center; margin: 30px">
+	 Create new Campground
+</h1>
+	
+	<div class = "row">
+		
+
+		
+<div style = "width: 30%; margin: 10px auto;">	
+		
+<form method = "POST" action = "/campground">
+	<div class="form-group">
+	<label for="nameForm"> Name of the Camping </label>
+	<input class = "form-control" type = "text" name = "name" placeholder = "name" id = "nameForm" > 
+	</div>
+	<div class="form-group">
+	<label for="nameForm"> Name of the Camping </label>
+	<input class = "form-control" type = "number" name = "price" placeholder = "price" step = "0.01" id = "nameForm" > 
+	</div>
+	<div class="form-group">
+	<input class = "form-control" type = "text" name = "image" placeholder = "Add inm URL">
+		</div>
+	<div class="form-group">
+	<input class = "form-control" type = "text" name = "description" placeholder = "add description" > 
+	</div>
+	<div class="form-group">
+	<button class="btn btn-primary btn-block">
+		Submit!
+		</button> </div>
+	<a href="/campground"> Go Back </a>
+</form>
+		</div>			
+</div>
+</div>
+		
+<%- include("partials/footer") %>
